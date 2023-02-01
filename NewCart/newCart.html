@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="Font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" />
+    <title>Document</title>
+    <style>
+        /* .row{
+            align-items: center;
+           display: flex;
+           justify-content: center;
+        }
+        .single-cart{
+            margin: 10px;
+            transition: transform .2s;
+        }
+        .single-cart:hover{
+            transform: scale(1.08);
+        } 
+        body{
+            background: #eee;
+        }
+        .price img{
+            height: 170px;
+        }
+        .container{
+            width: 900px;
+            margin: 5% auto;
+        }
+        .single-cart{
+            width: 23%;
+            background: #d1f1e9;
+            float: left;
+            margin-top: 2%;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+            text-align: center;
+            transition: transform .2s;
+            margin: 7px;
+            border-radius: 10px;
+            
+        }
+        .single-cart:hover{
+            transform: scale(1.08);
+        }
+        .single-cart img{
+            width: 150px;
+        }
+        .single-cart .btn{
+          background-color: gold;
+          border: 2px solid gold;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          padding: 5px;
+        }
+
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        }
+
+        tr:nth-child(even) {
+        background-color: #dddddd;
+        } 
+       
+       #root{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+       }
+       .sidebar{
+        width: 40%;
+        border-radius: 5px;
+        background-color: darkolivegreen;
+        margin-left: 20px;
+        padding: 15px;
+        text-align: center;
+       }
+       .head{
+        background-color: goldenrod;
+        border-radius: 3px;
+        height: 40px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        color: white;
+       }
+       .foot{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        padding: 10px 0;
+        border-top: 1px solid #333;
+       }
+       .cartImg{
+        width: 200px;
+
+       } */
+       *{
+        margin: 0;
+        padding: 0;
+       }
+       .container{
+            width: 900px;
+            margin: 5px auto;
+        }
+        .row{
+            
+        }
+        .price img{
+            width: 200px;
+            height: 200px;
+        }
+        .single-cart h1{
+            height: 100px;
+            font-size: 28px;
+            font-weight: 900;
+        }
+        .single-cart{
+            border: 2px solid aqua;
+            border-radius: 10px;
+            margin-top: 5px;
+            padding: 5px;
+            background-color: #d1f1e9;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 card  single-cart" id="item">
+                <h1>Private Pilot Handbook by Rod Machado</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.18.27 PM.png" alt="">
+                   <h2>price : $ 84.95</h2>
+                </div>
+                <div class="deal">
+                 <h4>Learn the fundamentals of aeronautics & aircraft operations.</h4>
+                </div>
+                <button id="add-to-cart" class="btn add-btn"><a href="https://rodmachado.com/products/rod-machados-private-commercial-pilot-handbook?aff=438">See Details</a></button>
+               </div>
+               <div class="col-sm-4 single-cart" id="item">
+                <h1>Jeppesen Private Pilot Manual</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.21.58 PM.png" alt="">
+                   <h2>price : $ 98.84</h2>
+                </div>
+                <div class="deal">
+                 <h4>Used by thousands of pilots to get their priavte pilot license.</h4>
+                </div>
+                <button id="add-to-cart" class="btn add-btn"><a href="https://amzn.to/3wHCA8p">See Details</a></button>
+               </div>
+               <div class="col-sm-4 single-cart" id="item">
+                <h1>Pilot Handbook of Aeronautical Kowledge</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.36.19 PM.png" alt="">
+                   <h2>price : $ 24.95</h2>
+                </div>
+                <div class="deal">
+                 <h4>Introduction to flight training in plain language.</h4>
+                </div>
+                <button id="add-to-cart" class="btn add-btn"><a href="https://amzn.to/3JtuBn1">See Details</a></button>
+               </div>
+               <div class="col-md-4 single-cart" id="item">
+                <h1>ASA Private Pilot Knowledge test prep+</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.32.35 PM.png" alt="">
+                   <h2>price : $ 59.95</h2>
+                </div>
+                <div class="deal">
+                 <h4>Test your private pilot license knowledge & prepare for the knowledge exam. Includes a software.</h4>
+                </div>
+                <button id="add-to-cart" class="btn add-btn"><a href="https://amzn.to/3kZauTl">See Details</a></button>
+               </div>
+               <div class="col-md-4 single-cart" id="item">
+                <h1>Gleims Private Pilot Knowledge test prep</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.33.20 PM.png" alt="">
+                   <h2>price : $ 26.06</h2>
+                </div>
+                <div class="deal">
+                 <h4>Test your private pilot license knowledge & prepare for the knowledge exam. Includes a software.</h4>
+                </div>
+                <button id="add-to-cart" class="btn add-btn"><a href="https://amzn.to/3YfgI01">See Details</a></button>
+               </div>
+               <div class="col-md-4 single-cart" id="item">
+                <h1>eWorkbook by Rod Machado</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.33.51 PM.png" alt="">
+                   <h2>price : $ 19.95</h2>
+                </div>
+                <div class="deal">
+                 <h4>Test your private pilot license knowledge & prepare for the knowledge exam. Includes a software.</h4>
+                </div>
+               </div>
+               <div class="col-md-4 single-cart" id="item">
+                <h1>How to Fly an Airplane Handbook by Rod Machado</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.34.51 PM.png" alt="">
+                   <h2>price : $ 59.95</h2>
+                </div>
+                <div class="deal">
+                 <h4>Test your private pilot license knowledge & prepare for the knowledge exam. Includes a software.</h4>
+                </div>
+               </div>
+               <div class="col-md-4 single-cart" id="item">
+                <h1>Airplane Flying Handbook</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.35.26 PM.png" alt="">
+                   <h2>price : $ 18.52</h2>
+                </div>
+                <div class="deal">
+                 <h4>Test your private pilot license knowledge & prepare for the knowledge exam. Includes a software.</h4>
+                </div>
+                <button id="add-to-cart" class="btn add-btn"><a href="https://amzn.to/3RrImob">See Details</a></button>
+               </div>
+               <div class="col-md-4 single-cart" id="item">
+                <h1>ASA Oral exam guide - Private Pilot</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.35.26 PM.png" alt="">
+                   <h2>price : $ 14.95</h2>
+                </div>
+                <div class="deal">
+                 <h4>Test your private pilot license knowledge & prepare for the knowledge exam. Includes a software.</h4>
+                </div>
+                <button id="add-to-cart" class="btn add-btn"><a href="https://amzn.to/3JsZNTj">See Details</a></button>
+               </div>
+               <div class="col-md-4 single-cart" id="item">
+                <h1>Airman Certification Standards</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.35.46 PM.png" alt="">
+                   <h2>price : $ 9.95</h2>
+                </div>
+                <div class="deal">
+                 <h4>Test your private pilot license knowledge & prepare for the knowledge exam. Includes a software.</h4>
+                </div>
+                <button id="add-to-cart" class="btn add-btn"><a href="https://amzn.to/3WS0dG7">See Details</a></button>
+               </div>
+               <div class="col-md-4 single-cart" id="item">
+                <h1>FAR/AIM</h1>
+                <div class="price">
+                    <img src="../image2/Screenshot 2023-01-31 at 5.33.51 PM.png" alt="">
+                   <h2>price : $ 26.96</h2>
+                </div>
+                <div class="deal">
+                 <h4>Test your private pilot license knowledge & prepare for the knowledge exam. Includes a software.</h4>
+                </div>
+                <div class="btn">
+                    <a href="https://amzn.to/3kXvhH5">See Details</a>
+                </div>
+               </div>
+        </div>
+    </div>
+    
+</body>
+</html>
